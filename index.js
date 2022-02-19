@@ -1,4 +1,4 @@
-myStorage = window.localStorage;
+window.localStorage;
 
 var quotes = [
     "“Be yourself; everyone else is already taken.” ― Oscar Wilde",
