@@ -1,4 +1,4 @@
-window.localStorage;
+window.localStorage.setItem(JSON.stringify(person))
 
 var quotes = [
     "“Be yourself; everyone else is already taken.” ― Oscar Wilde",
