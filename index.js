@@ -1,3 +1,4 @@
+
 var quotes = [
     "“Be yourself; everyone else is already taken.” ― Oscar Wilde",
     "“Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.” ― Bernard M. Baruch",
@@ -13,12 +14,12 @@ function randomQuote(){
     var randomNumber = Math.floor(Math.random() * (quotes.length));
     document.getElementById('random_quote').innerHTML = quotes[randomNumber];
 }
-let person = prompt('Please fill in your name', 'Your name here.');
+let person = prompt('Please fill in your name.', 'Type your name here..')
 let text;
-if(person == null || person == ''){
+if(person == null || nameUser == ''){
     text = "User canceled the prompt.";
 }else{
-    text = "Hey " + person + ", How are you doing today?";
+    text = "Hey " + nameUser + ", How are you doing today?";
 }
 document.getElementById('main_txt').innerHTML = text;
 
