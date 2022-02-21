@@ -1,5 +1,3 @@
-window.localStorage.setItem(JSON.stringify(person))
-
 var quotes = [
     "“Be yourself; everyone else is already taken.” ― Oscar Wilde",
     "“Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.” ― Bernard M. Baruch",
@@ -8,7 +6,8 @@ var quotes = [
     "“Learn as if you will live forever, live like you will die tomorrow.” — Mahatma Gandhi",
     "“When you give joy to other people, you get more joy in return. You should give a good thought to happiness that you can give out.”— Eleanor Roosevelt",
     '"Success is not final; failure is not fatal: It is the courage to continue that counts." — Winston S. Churchill',
-    '"It is better to fail in originality than to succeed in imitation." — Herman Melville'
+    '"It is better to fail in originality than to succeed in imitation." — Herman Melville',
+    "'Do or do not, there is no try.' - Master Oogway"
 ]
 function randomQuote(){
     var randomNumber = Math.floor(Math.random() * (quotes.length));
