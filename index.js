@@ -14,3 +14,16 @@ function randomQuote(){
     var randomNumber = Math.floor(Math.random() * (quotes.length));
     document.getElementById('random_quote').innerHTML = quotes[randomNumber];
 }
+
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '93de44178bmsh6622f6cc46c4996p14c418jsn72d2322a812d',
+		'X-RapidAPI-Host': 'ronreiter-meme-generator.p.rapidapi.com'
+	}
+};
+
+fetch('https://ronreiter-meme-generator.p.rapidapi.com/meme?top=Next%20meme%3A&bottom=Using%20meme%20generator%20API&meme=Condescending-Wonka&font_size=20&font=Impact', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));

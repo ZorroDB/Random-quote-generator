@@ -7,44 +7,31 @@
     font-size: 18px;
     position: absolute;
     top: 180px;
+    text-shadow: 1px 1px 1px 1px black;
+    text-align: center;
 }
 body, html{
-    margin: 0; 
+    margin: 0 !important;
     height: 100%;
     overflow: hidden;
 
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-button{
-    font-size: 20px;
-    border: none;
-    padding: 10px;
-    background-color: transparent;
+.-btn{
     position: absolute;
     z-index: 1;
-    cursor: pointer;
-    
+    width: 20rem;
+    top: 80px;
+
 }
-button:hover{
-    transition: 0.5s;
-    text-decoration: underline 2px;
-    text-underline-offset: 3px  ;
-}
-.container{
-    position: relative;
-    text-align: center;
-}
+.container{height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;}
+
 h1{
     width: 100%;
     text-align: center;
     position: absolute;
-}
-.-btn{
-    width: 100%;
-    position: absolute;
-    top: 80px;
 }
