@@ -14,12 +14,3 @@ function randomQuote(){
     var randomNumber = Math.floor(Math.random() * (quotes.length));
     document.getElementById('random_quote').innerHTML = quotes[randomNumber];
 }
-let person = prompt('Please fill in your name.', 'Type your name here..')
-let text;
-if(person == null || nameUser == ''){
-    text = "User canceled the prompt.";
-}else{
-    text = "Hey " + nameUser + ", How are you doing today?";
-}
-document.getElementById('main_txt').innerHTML = text;
-
